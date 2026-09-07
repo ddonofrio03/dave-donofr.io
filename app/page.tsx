@@ -1,32 +1,13 @@
-'use client';
-import { useEffect, useRef } from 'react';
 import { experience } from './profile-data';
 
 const linkedin = 'https://www.linkedin.com/in/ddonofrio03/';
 export default function Home() {
-  const root = useRef<HTMLElement>(null);
-  useEffect(() => {
-    const media = window.matchMedia('(prefers-reduced-motion: reduce), (max-width: 760px)');
-    let frame = 0;
-    const paint = () => {
-      frame = 0;
-      if (!root.current) return;
-      const y = media.matches ? 0 : Math.min(window.scrollY, 900);
-      root.current.style.setProperty('--portrait-y', `${-y * 0.13}px`);
-      root.current.style.setProperty('--copy-y', `${y * 0.09}px`);
-    };
-    const scroll = () => { if (!frame) frame = requestAnimationFrame(paint); };
-    paint();
-    window.addEventListener('scroll', scroll, { passive: true });
-    media.addEventListener('change', scroll);
-    return () => { window.removeEventListener('scroll', scroll); media.removeEventListener('change', scroll); cancelAnimationFrame(frame); };
-  }, []);
-  return <main id="top" ref={root}>
+  return <main id="top">
     <a className="skip" href="#about">Skip to content</a>
     <header className="nav"><a href="#top" className="wordmark">D<span> / </span>D.</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Connect <span>↗</span></a></nav></header>
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-meta"><span>DAVID D’ONOFRIO</span><span>COMMUNITY. COMMUNICATION. PUBLIC AFFAIRS.</span></div>
-      <div className="hero-grid"><div className="hero-copy"><p className="eyebrow"><span className="dot"/> COMMUNITY ENGAGEMENT · PUBLIC RELATIONS · GOVERNMENT AFFAIRS</p><h1 id="hero-title">David<br/><em>D’Onofrio.</em></h1><p className="intro">Strategic communications and public affairs leadership. More than 30 years connecting communities, companies and decision-makers to advance complex projects.</p><a className="round-link" href="#about"><span className="circle">↓</span> Professional background</a></div><figure className="portrait"><img src="/david.jpg" width="1258" height="1022" alt="Dave D’Onofrio smiling" fetchPriority="high"/><figcaption><span>Dave D’Onofrio</span><span>SVP, RenUSA · Founder, The Casey Group</span></figcaption><div className="portrait-label" aria-hidden="true">PEOPLE FIRST.</div></figure></div>
+      <div className="hero-grid"><div className="hero-copy"><p className="eyebrow"><span className="dot"/> COMMUNITY ENGAGEMENT · PUBLIC RELATIONS · GOVERNMENT AFFAIRS</p><h1 id="hero-title">David<br/><em>D’Onofrio.</em></h1><p className="intro">Strategic communications and public affairs leadership. More than 30 years connecting communities, companies and decision-makers to advance complex projects.</p><a className="round-link" href="#about"><span className="circle">↓</span> Professional background</a></div><figure className="portrait"><div className="portrait-frame"><img src="/david.jpg" width="1258" height="1022" alt="Dave D’Onofrio smiling" fetchPriority="high"/><span className="portrait-seal" aria-hidden="true">PEOPLE<br/>FIRST</span></div><figcaption><span>Dave D’Onofrio</span><span>SVP, RenUSA · Founder, The Casey Group</span></figcaption></figure></div>
       <div className="hero-bottom"><span>LEESBURG, VIRGINIA · NATIONAL EXPERIENCE</span><span>SCROLL TO EXPLORE ↓</span></div>
     </section>
     <section id="about" className="about section"><p className="eyebrow">01 / PROFESSIONAL PROFILE</p><h2>Complex projects.<br/>Clear <em>direction.</em></h2><div className="about-text"><p>David D’Onofrio brings more than 30 years of experience in strategic communications, government affairs and community engagement.</p><p>His work spans complex regulatory matters, major development proposals, professional sports and renewable energy. He develops communications strategies that engage stakeholders, build relationships with decision-makers and support project approvals.</p><p>Through close client partnerships, he aligns traditional media, social campaigns and direct outreach to communities and elected officials with each project’s goals.</p><a className="text-link" href={linkedin} target="_blank" rel="noreferrer">View LinkedIn profile <span>↗</span></a></div></section>
