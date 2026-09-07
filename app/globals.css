@@ -50,9 +50,8 @@ h1 em{display:block}
 .portrait-frame{position:relative;width:240px;height:240px;margin:0 auto}
 .portrait img{width:240px;height:240px;border-radius:50%;object-fit:cover;object-position:51% 20%;display:block;border:6px solid var(--cream)}
 .portrait-seal{position:absolute;bottom:-8px;right:-10px;width:76px;height:76px;border-radius:50%;background:var(--mustard);color:var(--denim-ink);display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:.5px;line-height:1.25;transform:rotate(-9deg);border:3px solid var(--denim-ink)}
-.portrait figcaption{margin-top:20px;display:flex;flex-direction:column;gap:4px}
-.portrait figcaption span:first-child{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.3px}
-.portrait figcaption span:last-child{font-family:'Barlow',sans-serif;font-size:13px;color:var(--slate)}
+.portrait figcaption{margin-top:20px}
+.portrait figcaption span{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.3px;color:var(--slate)}
 
 .hero-bottom{border-top:1px solid #ffffff26;padding:22px 0}
 
