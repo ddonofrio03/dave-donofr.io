@@ -86,8 +86,7 @@ h2{font-size:clamp(38px,4.8vw,68px);font-weight:400;line-height:1.05;letter-spac
 .career-heading h2{font-size:clamp(36px,4vw,56px)}
 .career-heading>p:last-child{font-family:'Barlow',sans-serif;font-size:16px;line-height:1.6;color:var(--slate);max-width:290px}
 .job{border-top:2px solid #ffffff22;padding:28px 0 42px}
-.job-date{display:flex;justify-content:space-between;font-family:'Barlow Condensed',sans-serif;font-weight:600;color:var(--slate);font-size:14px;letter-spacing:.5px;gap:18px;margin-bottom:22px;text-transform:uppercase}
-.job-date span{color:var(--mustard)}
+.job-date{font-family:'Barlow Condensed',sans-serif;font-weight:600;color:var(--mustard);font-size:14px;letter-spacing:.5px;margin-bottom:22px;text-transform:uppercase}
 .job h3{font-family:'Archivo Black',sans-serif;font-size:24px;text-transform:none;margin:0 0 8px}
 .job p,.job li{font-family:'Barlow',sans-serif;font-size:16px;line-height:1.6;color:var(--slate)}
 .job .role{font-family:'Barlow Condensed',sans-serif;font-weight:600;color:var(--cream);font-size:17px;margin:6px 0;text-transform:uppercase;letter-spacing:.3px}
@@ -99,8 +98,7 @@ h2{font-size:clamp(38px,4.8vw,68px);font-weight:400;line-height:1.05;letter-spac
 .perspective{background:var(--denim-ink)}
 .principles{margin-top:70px;display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
 .principles article{border-top:2px solid var(--mustard);padding:22px 0}
-.principles article>span{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--mustard)}
-.principles h3{font-family:'Archivo Black',sans-serif;font-size:26px;text-transform:none;margin:18px 0 12px}
+.principles h3{font-family:'Archivo Black',sans-serif;font-size:26px;text-transform:none;margin:0 0 12px}
 .principles p{font-family:'Barlow',sans-serif;font-size:16px;color:var(--slate);line-height:1.55}
 .skills{margin-top:56px;border-top:1px solid #ffffff26;padding-top:28px}
 .skills h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.5px}
