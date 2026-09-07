@@ -4,9 +4,9 @@ const linkedin = 'https://www.linkedin.com/in/ddonofrio03/';
 export default function Home() {
   return <main id="top">
     <a className="skip" href="#about">Skip to content</a>
-    <header className="nav"><a href="#top" className="wordmark">D<span> / </span>D.</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Connect <span>↗</span></a></nav></header>
+    <header className="nav"><nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Connect <span>↗</span></a></nav></header>
     <section className="hero" aria-labelledby="hero-title">
-      <div className="hero-meta"><span>DAVID D’ONOFRIO</span><span>COMMUNITY. COMMUNICATION. PUBLIC AFFAIRS.</span></div>
+      <div className="hero-meta"><span>COMMUNITY. COMMUNICATION. PUBLIC AFFAIRS.</span></div>
       <div className="hero-grid"><div className="hero-copy"><p className="eyebrow"><span className="dot"/> COMMUNITY ENGAGEMENT · PUBLIC RELATIONS · GOVERNMENT AFFAIRS</p><h1 id="hero-title">David<br/><em>D’Onofrio.</em></h1><p className="intro">Strategic communications and public affairs leadership. More than 30 years connecting communities, companies and decision-makers to advance complex projects.</p><a className="round-link" href="#about"><span className="circle">↓</span> Professional background</a></div><figure className="portrait"><div className="portrait-frame"><img src="/david.jpg" width="1258" height="1022" alt="Dave D’Onofrio smiling" fetchPriority="high"/><span className="portrait-seal" aria-hidden="true">PEOPLE<br/>FIRST</span></div><figcaption><span>Dave D’Onofrio</span><span>SVP, RenUSA · Founder, The Casey Group</span></figcaption></figure></div>
       <div className="hero-bottom"><span>LEESBURG, VIRGINIA · NATIONAL EXPERIENCE</span><span>SCROLL TO EXPLORE ↓</span></div>
     </section>
